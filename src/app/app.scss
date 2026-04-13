@@ -1,0 +1,22 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+app-sidebar {
+    /* let host handle width to allow transition nicely without conflict */
+    flex-shrink: 0;
+    height: 100%;
+    display: block;
+    z-index: 100;
+}
+
+app-chat-interface {
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
